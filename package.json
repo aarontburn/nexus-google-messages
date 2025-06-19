@@ -7,7 +7,7 @@
     "export:output-dir": "node node_modules/@nexus-app/nexus-exporter/exporter.js --default-location"
   },
   "devDependencies": {
-    "@nexus-app/nexus-client": "^0.0.12",
+    "@nexus-app/nexus-client": "^0.1.0",
     "@types/yauzl-promise": "^4.0.1",
     "electron": "^35.1.5",
     "typescript": "^4.8.3",

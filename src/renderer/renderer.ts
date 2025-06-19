@@ -1,3 +1,4 @@
+
 // Sends information to the the process.
 const sendToProcess = (eventType: string, ...data: any[]): Promise<void> =>
     window.ipc.sendToProcess(eventType, data);
@@ -10,7 +11,7 @@ window.ipc.onProcessEvent((eventType: string, data: any[]) => {
             // Create the webview
             const { userAgent, partition } = data[0];
 
-            const url: string = "https://www.nexus-app.net/develop/";
+            const url: string = "https://messages.google.com/";
             const html: string = `
                 <webview 
                     allowpopups

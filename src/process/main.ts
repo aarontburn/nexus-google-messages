@@ -7,15 +7,7 @@ const MODULE_ID: string = "{EXPORTED_MODULE_ID}";
 const MODULE_NAME: string = "{EXPORTED_MODULE_NAME}";
 // ---------------------------------------------------
 
-
-
-// If you have an icon, specify the relative path from this file.
-// Can be a .png, .jpeg, .jpg, or .svg
-/*
-    const ICON_PATH: string = path.join(__dirname, "../path to image")
-*/
-
-const ICON_PATH: string = undefined;
+const ICON_PATH: string = path.join(__dirname, "./icon.png")
 
 export default class SampleProcess extends Process {
 

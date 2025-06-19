@@ -1,13 +1,22 @@
 {
-    "name": "Sample Web Browser Module",
-    "id": "developer.Sample_Web_Module",
-    "author": "developer",
+    "name": "Google Messages",
+    "id": "aarontburn.Google_Messages",
+    "author": "aarontburn",
     "version": "1.0.0",
-    "description": "A developer template to embed websites within Nexus.",
-    "platforms": ["win32", "linux", "darwin"],
-    "link": "https://github.com/aarontburn/nexus-template-webpage",
+    "description": "A Google Messages embed for Nexus",
+    "platforms": [
+        "win32",
+        "linux",
+        "darwin"
+    ],
+    "link": "https://github.com/aarontburn/nexus-google-messages",
+    "author-id": "683193056e5989838dcf772c",
+    "git-latest": {
+        "git-username": "aarontburn",
+        "git-repo-name": "nexus-google-messages"
+    },
     "build": {
-        "build-version": 1,
+        "build-version": 3,
         "excluded": [
             "electron.ts"
         ],
