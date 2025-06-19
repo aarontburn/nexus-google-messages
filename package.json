@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "postinstall": "npm install @nexus-app/nexus-client@latest",
+    "start": "npm run export:dev && cd ./node_modules/@nexus-app/nexus-client/ && npm start",
+    "export": "node node_modules/@nexus-app/nexus-exporter/exporter.js",
+    "export:dev": "node node_modules/@nexus-app/nexus-exporter/exporter.js --dev",
+    "export:output-dir": "node node_modules/@nexus-app/nexus-exporter/exporter.js --default-location"
+  },
+  "devDependencies": {
+    "@nexus-app/nexus-client": "^0.0.12",
+    "@types/yauzl-promise": "^4.0.1",
+    "electron": "^35.1.5",
+    "typescript": "^4.8.3",
+    "yauzl-promise": "^4.0.0"
+  }
+}

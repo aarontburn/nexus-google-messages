@@ -1,0 +1,33 @@
+{
+    "name": "Sample Web Browser Module",
+    "id": "developer.Sample_Web_Module",
+    "author": "developer",
+    "version": "1.0.0",
+    "description": "A developer template to embed websites within Nexus.",
+    "platforms": ["win32", "linux", "darwin"],
+    "link": "https://github.com/aarontburn/nexus-template-webpage",
+    "build": {
+        "build-version": 1,
+        "excluded": [
+            "electron.ts"
+        ],
+        "included": [],
+        "process": "./process/main.js",
+        "replace": [
+            {
+                "from": "{EXPORTED_MODULE_ID}",
+                "to": "%id%",
+                "at": [
+                    "./process/main.ts"
+                ]
+            },
+            {
+                "from": "{EXPORTED_MODULE_NAME}",
+                "to": "%name%",
+                "at": [
+                    "./process/main.ts"
+                ]
+            }
+        ]
+    }
+}
