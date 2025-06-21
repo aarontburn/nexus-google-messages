@@ -11,7 +11,7 @@ window.ipc.onProcessEvent((eventType: string, data: any[]) => {
             // Create the webview
             const { userAgent, partition } = data[0];
 
-            const url: string = "https://messages.google.com/";
+            const url: string = "https://messages.google.com/web/";
             const html: string = `
                 <webview 
                     allowpopups

@@ -1,5 +1,5 @@
 import { Process } from "@nexus-app/nexus-module-builder"
-import { session } from "electron";
+import { session, WebContents } from "electron";
 import path from 'path';
 
 // These is replaced to the ID specified in export-config.js during export. DO NOT MODIFY.
@@ -31,6 +31,12 @@ export default class SampleProcess extends Process {
                 htmlPath: path.join(__dirname, "../renderer/index.html"),
             }
         });
+        session.fromPartition(this.partition).setPermissionRequestHandler((webContents, permission, callback) => {
+            if (permission === "notifications") {
+                console.log(permission)
+            }
+            callback(true)
+        })
 
         // Alternative method:
         // If you simply want to embed a website quickly but have no control over it,
