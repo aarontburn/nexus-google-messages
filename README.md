@@ -2,4 +2,4 @@
 
 Chat using Google Messages directly within Nexus.
 
-![Google Messages within Nexus](repo-assets/preview.png)
+![Google Messages within Nexus](repo-assets/preview1.png)
